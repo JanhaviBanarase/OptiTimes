@@ -69,8 +69,8 @@ footer {
 
 /* Media Quries */
 @media only screen and (max-width: 1150px) {
-    .newsCard {
-        width: 83vw;
+   .newsCard {
+        width: 30rem;
         margin: 7px;
     }
     .card-header{
