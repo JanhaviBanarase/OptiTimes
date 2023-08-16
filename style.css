@@ -73,6 +73,12 @@ footer {
         width: 30rem;
         margin: 7px;
     }
+     .card-header{
+        height: 6rem;
+    }
+    .card-body{
+        height: 400px;
+    }
     #newsBox {
         margin: 10px auto 10px auto;
         padding: 10px;
