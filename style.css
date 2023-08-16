@@ -41,11 +41,6 @@ h3{
    
 }
 
-#img {
-    height: 406px;
-    width: 721px;
-}
-
 .line {
     width: 100%;
     border: 1px solid #0C356A;
@@ -77,5 +72,11 @@ footer {
     .newsCard {
         width: 83vw;
         margin: 7px;
+    }
+    .card-header{
+        height: 6.5rem;
+    }
+    .card-body{
+        height: 400px;
     }
 }
