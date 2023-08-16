@@ -1,7 +1,7 @@
 let newsBox = document.getElementById('newsBox');
 let spinner = document.getElementById('spinner');
 let newsCateogry = ['national', 'business', 'sports', 'world', 'politics', 'technology', 'startup', 'entertainment', 'miscellaneous', 'hatke', 'science', 'automobile'];
-// Create XML Object
+
 const xhr = new XMLHttpRequest();
 
 function sendCategory(index) {
@@ -15,11 +15,10 @@ function getNews(newsCateogryName) {
     xhr.getResponseHeader('Content-type', 'application/json');
 
     xhr.onload = function () {
-        // status code 200 is For "OK"
+        
         if (this.status === 200) {
             let json = JSON.parse(this.responseText);
-            let data = json.data;  // Get data Oblect
-            // console.log(data);
+            let data = json.data;  
             let newsHTML = "";
 
             function showSpinner() {
@@ -29,7 +28,7 @@ function getNews(newsCateogryName) {
 
             xhr.onprogress = showSpinner();
 
-            //Applying Loop on data to get inner elements
+          
             for (key in data) {
 
                 let news = `<div class="newsCard card">
@@ -46,7 +45,7 @@ function getNews(newsCateogryName) {
                         </div>`;
                 newsHTML += news;
             }
-            // Manuplating DOM
+          
             newsBox.innerHTML = newsHTML;
         }
         else {
@@ -54,6 +53,6 @@ function getNews(newsCateogryName) {
         }
     }
 
-    xhr.send();  // This is important to run whole code
+    xhr.send();  
 
 }
