@@ -74,10 +74,10 @@ footer {
         margin: 7px;
     }
     .card-header{
-        height: 7rem;
+        height: 6rem;
     }
     .card-body{
-        height: 450px;
+        height: 400px;
     }
     #newsBox {
         margin: 10px auto 10px auto;
