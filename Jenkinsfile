@@ -14,12 +14,11 @@ git clone https://github.com/JanhaviBanarase/OptiTimes.git'''
             steps{
                 bat '''D:
 cd Training/OptiTimes
-git add .
 echo "This is Pipelinejob-1" >secondfile.txt
-git add newfile.txt
+git add secondfile.txt
 git config --global user.email "janhavib12345@gmail.com"
 git config --global user.name "JanhaviBanarase"
-git commit -m "new commit"
+git commit -m "my new commit"
 git push https://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@github.com/JanhaviBanarase/OptiTimes.git '''
 
             }
